@@ -1,0 +1,598 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Fitness Dashboard UI KIT
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+    
+.grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 10px;
+    }
+
+.card {
+            background-color: #fff;
+            border: 2px solid #007bff;
+       border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Button group container */
+        .container {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: #0056b3;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #003f7f;
+            transform: scale(1.1);
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+            background: #fdf6cc; /* Light yellow */
+            color: #333; /* Darker text for contrast */
+            border-radius: 5px;
+            padding: 20px;
+            width: 540px;
+            height: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .year-stats {
+            white-space: nowrap;
+            max-height: 170px;
+            overflow: hidden;
+        }
+
+        .year-stats:hover {
+            overflow-x: auto;
+        }
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fff1a3; /* Light yellow */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ffd700; /* Golden yellow */
+            border-radius: 10px;
+        }
+
+        .month-group {
+            cursor: pointer;
+            max-width: 400px;
+            height: 110px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .bar {
+            background-color: #ffd700; /* Golden yellow */
+            width: 20px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .month-group:hover .bar,
+        .selected .bar {
+            background: #ffcc00; /* Deeper yellow */
+        }
+
+        .month-group:hover p,
+        .selected p {
+            color: #ffcc00; /* Highlighted text */
+        }
+
+        .h-25 {
+            height: 25%;
+        }
+
+        .h-50 {
+            height: 50%;
+        }
+
+        .h-75 {
+            height: 75%;
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .weather-widget {
+            background: #fff;
+            color: #333;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .weather-widget h2 {
+            color: #ffd700; /* Yellow title */
+        }
+
+        .weather-widget i {
+            color: #ffd700; /* Yellow icons */
+        }
+
+        .text-gray-500 {
+            color: #666; /* Slightly darker gray for better readability */
+        }
+
+#waterbottle{
+    padding-top: 5px;
+    margin-top: 18px;
+}
+#bed{
+    margin-top: 20px;
+}
+#Running{
+    margin-top: 25px;
+}
+  </style>
+ </head>
+ <body class="bg-gray-100" >
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="bg-yellow-500 w-20 min-h-full flex flex-col items-center py-4">
+    <!-- <div class="bg-white rounded-full p-2 mb-4">
+     <!-- <i class="fas fa-fire text-yellow-500 text-2xl">
+     </i> 
+     <img src="assets/css/assets/imgs/logo/main.png" alt="">
+    </div> -->
+    <div class="text-white text-2xl mb-4">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    </div>
+    <div class="text-white text-2xl mb-4">
+     <!-- <i class="fas fa-chart-bar">
+     </i> -->
+    </div>
+    <div class="text-white text-2xl mb-4">
+     <!-- <i class="fas fa-cog">
+     </i> -->
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <div>
+      <h1 class="text-2xl font-bold">
+       Hello, User
+      </h1>
+      <p class="text-gray-500">
+       Keep Moving &amp; Stay Healthy
+      </p>
+     </div>
+     <div class="flex items-center space-x-4">
+      <span class="text-gray-500" id="datechanges">
+       18 November 2024
+      </span>
+      <i class="fas fa-bell text-gray-500">
+      </i>
+     </div>
+    </div>
+    <div class="grid">
+        <div class="card bg-yellow-100">
+            <h2 class="text-xl font-bold">6.30 Hours</h2>
+            <p class="text-gray-500">Sleep</p>
+            <i class="fa-solid fa-bed fa-2xl" id="bed"></i>
+        </div>
+
+        <div class="container">
+            <h2 id="waterAmount" class="text-xl font-bold">5 Liters</h2>
+            <p>Water</p>
+            <div class="button-group">
+                <button class="btn" id="removeWater">-</button>
+                <i class="fa-solid fa-glass-water fa-2xl" id="waterbottle" ></i>
+                <button class="btn" id="addWater">+</button>
+            </div>
+        </div>
+
+        <div class="card bg-yellow-500 text-white">
+            <h2 class="text-xl font-bold">1590 Steps</h2>
+            <p>Walking</p>
+            <i class="fa-solid fa-person-running fa-2xl" id="Running"></i>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-6">
+        <!-- Main Container with Weekly Stats -->
+        <div class="main-container h-60">
+            <div class="year-stats">
+                <div class="month-group">
+                    <div class="bar h-100"></div>
+                    <p class="month">Sun</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-50"></div>
+                    <p class="month">Mon</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-75"></div>
+                    <p class="month">Tue</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-25"></div>
+                    <p class="month">Wed</p>
+                </div>
+                <div class="month-group selected">
+                    <div class="bar h-100"></div>
+                    <p class="month">Thu</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-50"></div>
+                    <p class="month">Fri</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-75"></div>
+                    <p class="month">Sat</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-25"></div>
+                    <p class="month">Sun</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-100"></div>
+                    <p class="month">Sun</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-50"></div>
+                    <p class="month">Mon</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-75"></div>
+                    <p class="month">Tue</p>
+                </div>
+                <div class="month-group">
+                    <div class="bar h-25"></div>
+                    <p class="month">Wed</p>
+                </div>
+                <div class="month-group selected">
+                    <div class="bar h-100"></div>
+                    <p class="month">Thu</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Widget -->
+        <div class="weather-widget">
+            <h2 class="text-xl font-bold mb-4">Weather</h2>
+            <div class="flex items-center mb-2">
+                <i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i>
+                <span class="text-gray-500">Los Angeles</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <div class="text-center">
+                    <i class="fas fa-umbrella text-yellow-500 text-2xl"></i>
+                    <p class="text-gray-500">19°C</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-cloud-rain text-yellow-500 text-2xl"></i>
+                    <p class="text-gray-500">3 Cm</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-wind text-yellow-500 text-2xl"></i>
+                    <p class="text-gray-500">10 Km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+     <h2 class="text-xl font-bold mb-4">
+      Map
+     </h2>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3152.2890836747015!2d76.65761740480893!3d30.516370167604983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schitkara%20univerty!5e0!3m2!1sen!2sin!4v1732878349310!5m2!1sen!2sin" width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   </div>
+   <!-- Right Sidebar -->
+   <div class="w-1/4 p-6 bg-white">
+    <div class="flex items-center mb-6">
+     <img alt="Profile picture of Rodney Gilbert" class="rounded-full w-16 h-16 mr-4" height="100" src="https://thumbs.dreamstime.com/b/proud-fitness-trainer-his-gym-confident-exercise-coach-gym-indian-fit-man-arms-crossed-bodybuilding-creates-proud-263412438.jpg" width="100"/>
+     <div>
+      <h2 class="text-xl font-bold">
+       Rodney Gilbert
+      </h2>
+      <p class="text-gray-500">
+       Athletic Coach
+      </p>
+     </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 mb-6">
+     <div class="text-center">
+      <h3 class="text-xl font-bold" id="height">
+       185 cm
+      </h3>
+      <p class="text-gray-500">
+       Height
+      </p>
+     </div>
+     <div class="text-center">
+      <h3 class="text-xl font-bold" id="weight">
+       65 kg
+      </h3>
+      <p class="text-gray-500">
+       Weight
+      </p>
+     </div>
+     <div class="text-center">
+      <h3 class="text-xl font-bold" id="age">
+       36
+      </h3>
+      <p class="text-gray-500">
+       Age
+      </p>
+     </div>
+    </div>
+    <div class="mb-6">
+     <h2 class="text-xl font-bold mb-4">
+      Monthly Goals
+     </h2>
+     <div class="mb-4">
+    
+      <div class="w-full bg-gray-200 rounded-full h-2.5">
+       <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 83%">
+       </div>
+      </div>
+     </div>
+     <div class="mb-4">
+      <div class="flex justify-between mb-1">
+       <span class="text-gray-500">
+        Running
+       </span>
+       <span class="text-gray-500">
+        20/100 km
+       </span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2.5">
+       <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 20%">
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="flex justify-between mb-1">
+       <span class="text-gray-500">
+        Lose Weight
+       </span>
+       <span class="text-gray-500">
+        3/6 kg
+       </span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2.5">
+       <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 50%">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div>
+        <h2 class="text-xl font-bold mb-4 flex items-center justify-between">
+          Upcoming Task
+          <button
+            id="add-task-btn"
+            class="text-white bg-blue-500 px-3 py-1 rounded-lg hover:bg-blue-600">
+            +
+          </button>
+        </h2>
+      
+        <!-- Hidden input form -->
+        <div id="task-input" class="mb-4 hidden">
+          <input
+            type="text"
+            id="event-name"
+            placeholder="Event Name"
+            class="border p-2 rounded-lg w-full mb-2">
+          <input
+            type="datetime-local"
+            id="event-date"
+            class="border p-2 rounded-lg w-full mb-2">
+          <button
+            id="save-task-btn"
+            class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+            Save
+          </button>
+        </div>
+      
+        <!-- Task list -->
+        <div id="task-list">
+          <div class="flex items-center justify-between mb-4 p-4 bg-gray-100 rounded-lg">
+            <div>
+              <h3 class="text-lg font-bold">Gymnastic</h3>
+              <p class="text-gray-500">18/12/2021 6:00 pm</p>
+            </div>
+            <i class="fas fa-ellipsis-h text-gray-500"></i>
+          </div>
+          <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+            <div>
+              <h3 class="text-lg font-bold">Running</h3>
+              <p class="text-gray-500">24/12/2021 3:00 pm</p>
+            </div>
+            <i class="fas fa-ellipsis-h text-gray-500"></i>
+          </div>
+        </div>
+      </div>
+      
+      
+   </div>
+  </div>
+  <script>
+          let age;
+        let weight;
+        let height;
+document.addEventListener('DOMContentLoaded', () => {
+    // Use a timeout to ensure each prompt is sequentially displayed
+    setTimeout(() => {
+        age = parseInt(prompt("Enter Your Age"), 10);
+        setTimeout(() => {
+            weight = parseInt(prompt("Enter Your Weight"), 10);
+            setTimeout(() => {
+            height = parseInt(prompt("Enter Your Height in CM"), 10);
+                
+
+                // Update the DOM
+                document.getElementById("age").innerHTML = isNaN(age) ? "Invalid input" : age;
+                document.getElementById("height").innerHTML = isNaN(height) ? "Invalid input" : height;
+                document.getElementById("weight").innerHTML = isNaN(weight) ? "Invalid input" : weight;
+            }, 100); // Small delay to separate prompts
+        }, 100); 
+    }, 100);
+});
+
+        let datechange = document.getElementById("datechanges")
+        setInterval(function(){
+            const date = new Date
+            let datechanges = date.toLocaleString()
+            datechange.innerHTML = datechanges
+        },1000)
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initial water amount in milliliters
+            let currentWaterAmount = 250; // 5 liters in milliliters
+
+            const waterDisplay = document.getElementById('waterAmount');
+
+            // Update the displayed water amount
+            const updateWaterAmount = () => {
+                waterDisplay.textContent = `${(currentWaterAmount / 1000).toFixed(2)} Liters`;
+            };
+
+            // Add 250ml
+            document.getElementById('addWater').addEventListener('click', () => {
+                currentWaterAmount += 250;
+                updateWaterAmount();
+            });
+
+            // Subtract 250ml
+            document.getElementById('removeWater').addEventListener('click', () => {
+                if (currentWaterAmount > 0) {
+                    currentWaterAmount -= 250;
+                    updateWaterAmount();
+                }
+            });
+
+            // Initialize the display
+            updateWaterAmount();
+        });
+
+  // Get elements
+const addTaskBtn = document.getElementById("add-task-btn");
+const taskInputDiv = document.getElementById("task-input");
+const saveTaskBtn = document.getElementById("save-task-btn");
+const taskListDiv = document.getElementById("task-list");
+
+// Show the input form when "+" is clicked
+addTaskBtn.addEventListener("click", () => {
+  taskInputDiv.classList.toggle("hidden");
+});
+
+// Add a new task when "Save" is clicked
+saveTaskBtn.addEventListener("click", () => {
+  const eventName = document.getElementById("event-name").value;
+  const eventDate = document.getElementById("event-date").value;
+
+  // Validate input
+  if (eventName === "" || eventDate === "") {
+    alert("Please fill in both fields.");
+    return;
+  }
+
+  // Format the date and time with minutes and seconds
+  const formattedDate = new Date(eventDate).toLocaleString("en-US", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+
+  // Create new task card
+  const taskCard = document.createElement("div");
+  taskCard.className =
+    "flex items-center justify-between mb-4 p-4 bg-gray-100 rounded-lg";
+  taskCard.innerHTML = `
+    <div>
+      <h3 class="text-lg font-bold">${eventName}</h3>
+      <p class="text-gray-500">${formattedDate}</p>
+    </div>
+    <i class="fas fa-ellipsis-h text-gray-500"></i>
+  `;
+
+  // Add the new task card to the list
+  taskListDiv.appendChild(taskCard);
+
+  // Clear inputs and hide form
+  document.getElementById("event-name").value = "";
+  document.getElementById("event-date").value = "";
+  taskInputDiv.classList.add("hidden");
+});
+
+
+
+  </script>
+ </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="assets/css/assets/imgs/logo/main.png" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/styles.css">
+    <title>FitFusion</title>
+</head>
+<body>
+    <div class="navContainer">
+        <nav >
+            <ul id="navList">
+                <li id="navLogoContainer">
+                    <img src="assets/css/assets/imgs/logo/main.png" alt="FitFusion Logo">
+                    <p id="navLogo">FitFusion</p>
+                </li>
+                <li id="navLinks">
+                  <a href="index.html" class="navItem">Home</a>
+                  <a href="yoga.html" class="navItem">Yoga</a>
+                  <a href="gym.html" class="navItem">Tracking</a>
+                  <a href="shoppingcart.html" class="navItem">Shop</a>
+                  <!-- <a href="#" class="navItem">About</a> -->
+                </li>
+            </ul>
+        </nav>
+    </div>  
+
+<div class="premiumcontainer1" style="background-color: black;">
+
+    <div class="signupbox ">
+        <!-- <div class="signupbox1">
+            <a href="premium.html"><button type="submit" class="signupbutton" >Basic</button></a>
+            <a href="premium2.html"><button type="submit" class="signupbutton">Standard</button></a>
+            <a href="premium3.html">  <button type="submit" class="signupbutton">Premium</button></a>
+        </div> -->
+
+
+        <h1>Get Premium Now </h1>
+        <h2>Basic Membership </h2>
+        <form class="signup-form">
+            <div class="signuppage">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="signuppage">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="signuppage">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="signuppage">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <button type="submit" class="signupbutton">Create Account</button>
+            <p class="inputtext"></p>
+        </form>
+     </div>
+
+     <div class="premiumphotos">
+        <img src="https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/muscular-back-bodybuilder-1280.jpg" alt="" height="700px" width="880px">
+     </div>
+</div>
+  
+
+
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector(".signup-form");
+    const btn = document.querySelector(".signupbutton");
+    const p = document.querySelector(".inputtext");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Remove the Create Account button
+        btn.remove();
+
+        // Display a success message in the paragraph element
+        p.textContent = "Successfully created an account!";
+        p.style.color = "yellow";
+        p.style.fontWeight = "bolder";
+        
+        // Optional: show an alert as well
+        alert("You have successfully created an account");
+        window.location.href = "index.html"
+    });
+    
+});
+</script>
+</body>
+</html>

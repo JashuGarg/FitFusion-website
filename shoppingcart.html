@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/shoppingcart.css">
+  <link rel="stylesheet" href="assets/css/bg-images.css">
+  <link rel="shortcut icon" href="assets/css/assets/imgs/logo/main.png" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Fitfusion Shopping Center</title>
+</head>
+
+<body style="overflow-x: hidden;">
+  <button id="backToTopBtn">  ↑  </button>
+
+  <div class="navContainer">
+    <nav>
+      <ul id="navList">
+        <li id="navLogoContainer">
+          <img src="assets/css/assets/imgs/logo/main.png" alt="FitFusion Logo">
+          <p id="navLogo">FitFusion</p>
+        </li>
+        <li id="navLinks">
+          <a href="index.html" class="navItem">Home</a>
+          <a href="yoga.html" class="navItem">Yoga</a>
+          <a href="gym.html" class="navItem">Tracking</a>
+          <a href="shoppingcart.html" class="navItem">Shop</a>
+          <!-- <a href="#" class="navItem">About</a> -->
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  
+  
+  
+  <div class="category-container">
+    <div class="category-item">
+      <img class="category-img" src="assets/css/assets/imgs/coverpage/men.png" alt="Men" style="padding-right: 8px;">
+      <p>Men</p>
+    </div>
+    <div class="category-item">
+      <img class="category-img" src="assets/css/assets/imgs/coverpage/girl.png" alt="Women">
+      <p>Women</p>
+    </div>
+    <div class="category-item">
+      <img class="category-img" src="assets/css/assets/imgs/coverpage/cardio.png" alt="Cardio">
+      <p>Cardio</p>
+    </div>
+    <div class="category-item">
+      <img class="category-img" src="assets/css/assets/imgs/coverpage/bottle.png" alt="Accessories">
+      <p>Accessories</p>
+    </div>
+    <div class="category-item">
+      <img class="category-img" src="assets/css/assets/imgs/coverpage/watch.png" alt="Watches">
+      <p>Watches</p>
+    </div>
+    <div class="category-item">
+      <img class="category-img" src="assets/css/assets/imgs/coverpage/protien.png" alt="Protein">
+      <p>Protein</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="starter-container">
+    <div class="Iam">
+
+      <p>Here We Provide</p>
+      <b>
+        <div class="innerIam">
+          Men Outfit<br />
+          Woman Outfit<br />
+          Cardio<br />
+          Gym Equipments<br />
+          Protiens
+        </div>
+      </b>
+
+    </div>
+  </div>
+  <div id="cart-icon">
+    <i class="fa fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </div>
+  
+  <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <button id="close-btn">X</button>
+      <h2>Cart Items</h2>
+      <div class="product-rows"></div>
+      <div class="cart-summary">
+        <span>Total: </span><span class="total-price">₹0</span>
+      </div>
+      <button class="purchase-btn">Purchase</button>
+    </div>
+  </div>
+
+  <!-- <div id="cart">Cart</div>
+  <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <button id="close-btn">Close</button>
+      <div class="product-rows"></div>
+      <div class="cart-summary">
+        <span>Total: </span><span class="total-price">₹0</span>
+        <button class="purchase-btn">Purchase</button>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="mens-outercontainer">
+    <div class="heading-container">
+      <a href="#" class="button type--B">
+        <div class="button__line"></div>
+        <div class="button__line"></div>
+        <span class="button__text">Men Collection</span>
+        <div class="button__drow1"></div>
+        <div class="button__drow2"></div>
+      </a>
+    </div>
+    <div class="mens-container">
+      <div class="product-card-wrapper">
+        <div class="product-image m1"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">CHKOKKO Regular Fit Tank Top</h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹899</span>
+            <span class="new-price">₹299</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m2"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            TECHNOSPORT Slim Fit Sleeveless T-Shirt
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹500</span>
+            <span class="new-price">₹309</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m3"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            Zexer Men Men Compression T-Shirt
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹999</span>
+            <span class="new-price">₹299</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m4"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">LEOTUDE Fit Sleeve T-Shirt</h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹1099</span>
+            <span class="new-price">₹479</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m5"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">Boldfit Sports T-Shirt</h2>
+          <br />
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹500</span>
+            <span class="new-price">₹389</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <!--------shoes----------->
+      <div class="product-card-wrapper">
+        <div class="product-image m6"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            Boldfit Joggers Cotton Track Pant
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹1799</span>
+            <span class="new-price">₹899</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m7"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">Lymio Track Pant for Men</h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹2599</span>
+            <span class="new-price">₹999</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m8"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">Puma Mens Dazzler Sneaker</h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹3999</span>
+            <span class="new-price">₹1624</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m9"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            Puma Mens Flyer Knit Running Shoe
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹5499</span>
+            <span class="new-price">₹2599</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m10"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            Red Tape Athleisure Shoes for Men
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹4599</span>
+            <span class="new-price">₹1759</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m11"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            CHKOKKO Men's Sports Track Suit
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹1599</span>
+            <span class="new-price">₹759</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+
+      <div class="product-card-wrapper">
+        <div class="product-image m12"></div>
+        <div class="product-details">
+          <h2 class="product-details-title">
+            Chrome & Coral Gym track suit for men
+          </h2>
+          <ul class="product-features-list">
+            <li>High-quality fabric</li>
+            <li>Water-resistant</li>
+            <li>Comfortable fit</li>
+          </ul>
+          <div class="product-price">
+            <span class="old-price">₹1299</span>
+            <span class="new-price">₹459</span>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa fa-shopping-cart"></i>
+            <span style="margin-left: 10px">Add to Cart</span>
+          </button>
+          <p class="addedtocart"></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="womens-outercontainer">
+      <div class="heading-container">
+        <a href="#" class="button type--B">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text">Women Collection</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <div class="mens-container">
+        <div class="product-card-wrapper">
+          <div class="product-image w1"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">Boldfit Training Crop Top</h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹999</span>
+              <span class="new-price">₹549</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w2"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">Elastane Stretch Regular Fit</h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹899</span>
+              <span class="new-price">₹459</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w3"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">BLINKIN Stretchable Gym Pants</h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1059</span>
+              <span class="new-price">₹359</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w4"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              BLINKIN Women's Stretch Fit Yoga Pants
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1059</span>
+              <span class="new-price">₹329</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w5"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              SAREE Workout Top & Bottom Set
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1599</span>
+              <span class="new-price">₹799</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w6"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              ZICADA® Women's Top & Bottom Set Gym Wear
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1299</span>
+              <span class="new-price">₹575</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w7"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              ANUGRAHA Women's Solid Stripes Track Suit
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1299</span>
+              <span class="new-price">₹599</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w8"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              London Hills Womans Zipper Running Track Suit
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹2899</span>
+              <span class="new-price">₹1599</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w9"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              DOCTOR EXTRA SOFT Memory Foam Women's Shoes
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹999</span>
+              <span class="new-price">₹699</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image w10"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Campus Hellen Women's Sports Shoes
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1499</span>
+              <span class="new-price">₹1004</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <div class="cardio-outercontainer">
+      <div class="heading-container">
+        <a href="#" class="button type--B">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text">Cardio</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <div class="mens-container">
+        <div class="product-card-wrapper">
+          <div class="product-image c1"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Treadmill Run 500 Foldable, Upto 16 kmph, 10% Incl, Smart, loading capacity 130kg
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹90,999</span>
+              <span class="new-price">₹64,999</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image c2"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              PowerMax Fitness TDA-230M 4HP Treadmill, Massager, 120kg user
+              weight, 15-Level Incline
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹79,500</span>
+              <span class="new-price">₹43,049</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image c3"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Rowing Machine Essential 120, 8 kg Flywheel, 8 Resistance Levels,
+              Max 110 kg
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹42,999</span>
+              <span class="new-price">₹22,999</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image c4"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              PowerMax Fitness EH-750 Elliptical Cross Trainer Gym Workout
+              Machine
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹78,000</span>
+              <span class="new-price">₹39,999</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image c5"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Rowing Machine Woodrower, Self Powered, Compact, Smart, 9 kg
+              Flywheel, Quiet
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1,19,999</span>
+              <span class="new-price">₹84,999</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image c6"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Sportop E80 Elliptical Cross Trainer
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹97,000</span>
+              <span class="new-price">₹ 88,000</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image c7"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Niceday Steppers for Exercise,Stair Stepper
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹6,000</span>
+              <span class="new-price">₹4,800</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <div class="gym-outercontainer">
+      <div class="heading-container">
+        <a href="#" class="button type--B">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text">Accessories</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <div class="mens-container">
+        <div class="product-card-wrapper">
+          <div class="product-image a1"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Harissons Trinity 28L Gym Bag for Men & Women with Shoe
+              Compartment & Yoga Mat Holder
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1249</span>
+              <span class="new-price">₹939</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a2"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Sfane Polyester 23cms Duffle/Gym Unisex bag with Separate Shoe
+              Compartment
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1059</span>
+              <span class="new-price">₹385</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a3"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Bodyband Hand Grip Workout Strengthener,Adjustable Hand Gripper
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹399</span>
+              <span class="new-price">₹99</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a4"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Boldfit Polyester Wrist Supporter for Gym Wrist Band
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹399</span>
+              <span class="new-price">₹149</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a5"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Boldfit Skipping Rope, Jumping Rope With Adjustable Height Speed
+              Skipping Rope
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹299</span>
+              <span class="new-price">₹99</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a6"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Boldfit Gym Knee Cap, Knee Pain Relief Product, Knee Support,Knee
+              Brace, Knee Pad, Knee Guard
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹499</span>
+              <span class="new-price">₹179</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a7"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Workout Gloves With Wrist Support For Gym Workouts
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1299</span>
+              <span class="new-price">₹499</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a8"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Boldfit Gym Gloves for Men Workout Wrist Support Gym Gloves
+              Weightlifting Gym Gloves
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹599</span>
+              <span class="new-price">₹350</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a9"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Fitkit Classic Bottle Shaker 700ml
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹499</span>
+              <span class="new-price">₹125</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a10"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Vector X Invader Pro Gym Sipper Bottle, Leakproof Guarantee Sipper
+              Bottle(750ml)
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹160</span>
+              <span class="new-price">₹99</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a11"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Nivia Giga Gallon Water Bottle, 1.8 Litres water Bottle for gym,
+              for sports, water bottle for gym
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹419</span>
+              <span class="new-price">₹329</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+
+        <div class="product-card-wrapper">
+          <div class="product-image a12"></div>
+          <div class="product-details">
+            <h2 class="product-details-title">
+              Sipper Water Bottle 2 Liter with Motivational Time Marker
+              Non-Toxic Water Bottle
+            </h2>
+            <ul class="product-features-list">
+              <li>High-quality fabric</li>
+              <li>Water-resistant</li>
+              <li>Comfortable fit</li>
+            </ul>
+            <div class="product-price">
+              <span class="old-price">₹1399</span>
+              <span class="new-price">₹559</span>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span style="margin-left: 10px">Add to Cart</span>
+            </button>
+            <p class="addedtocart"></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <div class="watches-outercontainer">
+      <div class="heading-container">
+        <a href="#" class="button type--B">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text">Watches</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <div class="mens-container">
+              
+          <div class="product-card-wrapper">
+            <div class="product-image image-product2"></div>
+            <div class="product-details">
+              <h2 class="product-details-title">Fitbit Sense 2</h2>
+              <ul class="product-features-list">
+                <li>High-quality fabric</li>
+                <li>Water-resistant</li>
+                <li>Comfortable fit</li>
+              </ul>
+              <div class="product-price">
+                <span class="old-price">₹24,999</span>
+                <span class="new-price">₹19,999</span>
+              </div>
+              <button class="add-to-cart-button">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="margin-left: 10px;">Add to Cart</span>
+              </button>
+              <p class="addedtocart"></p>
+            </div>
+          </div>
+          
+          <div class="product-card-wrapper">
+            <div class="product-image image-product3"></div>
+            <div class="product-details">
+              <h2 class="product-details-title">Fitbit Versa 4</h2>
+              <ul class="product-features-list">
+                <li>Waterfall Blue</li>
+                <li>Platinum Aluminium</li>
+                <li>Versatile use</li>
+              </ul>
+              <div class="product-price">
+                <span class="old-price">₹20,499</span>
+                <span class="new-price">₹15,999</span>
+              </div>
+              <button class="add-to-cart-button">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="margin-left: 10px;">Add to Cart</span>
+              </button>
+              <p class="addedtocart"></p>
+
+            </div>
+          </div>
+
+          <div class="product-card-wrapper">
+            <div class="product-image image-product1"></div>
+            <div class="product-details">
+              <h2 class="product-details-title">Fitbit Inspire 3</h2>
+              <ul class="product-features-list">
+                <li>Midnight Zen / Black</li>
+                <li>Waterproof</li>
+                <li>Lightweight</li>
+              </ul>
+              <div class="product-price">
+                <span class="old-price">₹ 8,999</span>
+                <span class="new-price">₹7,599</span>
+              </div>
+              <button class="add-to-cart-button">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="margin-left: 10px;">Add to Cart</span>
+              </button>
+              <p class="addedtocart"></p>
+
+            </div>
+          </div>
+          <div class="product-card-wrapper">
+            <div class="product-image image-product4"></div>
+            <div class="product-details">
+              <h2 class="product-details-title">Fitbit Inspire 3 </h2>
+              <ul class="product-features-list">
+                <li>Morning Glow / Black</li>
+                <li>Waterproof</li>
+                <li>Versatile use</li>
+              </ul>
+              <div class="product-price">
+                <span class="old-price">₹8,999</span>
+                <span class="new-price">₹8,599</span>
+              </div>
+              <button class="add-to-cart-button">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="margin-left: 10px;">Add to Cart</span>
+              </button>
+              <p class="addedtocart"></p>
+
+            </div>
+          </div>
+          <div class="product-card-wrapper">
+            <div class="product-image image-product5"></div>
+            <div class="product-details">
+              <h2 class="product-details-title">Fitbit Inpire 3</h2>
+              <ul class="product-features-list">
+                <li>Lilac Bliss / Black</li>
+                <li>Waterproof</li>
+                <li>Versatile use</li>
+              </ul>
+              <div class="product-price">
+                <span class="old-price">₹8,999</span>
+                <span class="new-price">₹8,599</span>
+              </div>
+              <button class="add-to-cart-button">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="margin-left: 10px;">Add to Cart</span>
+              </button>
+              <p class="addedtocart"></p>
+            </div> 
+          </div>
+          <div class="product-card-wrapper">
+            <div class="product-image image-product6"></div>
+            <div class="product-details">
+              <h2 class="product-details-title">Fitbit Versa 4</h2>
+              <ul class="product-features-list">
+                <li>Waterfall Blue</li>
+                <li>Platinum Aluminium</li>
+                <li>Versatile use</li>
+              </ul>
+              <div class="product-price">
+                <span class="old-price">₹20,499</span>
+                <span class="new-price">₹15,999</span>
+              </div>
+              <button class="add-to-cart-button">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="margin-left: 10px;">Add to Cart</span>
+              </button>
+
+              <p class="addedtocart"></p>
+
+            </div>
+          </div>
+          
+        
+      </div>
+    </div>
+
+
+
+
+  <!-- <div class="protien-outercontainer">
+      <div class="heading-container">
+        <a href="#" class="button type--B">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text">Protiens</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <div class="mens-container">
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Mens shopping</figcaption>
+        </figure>
+        <figure style="--c:#fff5">
+          <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
+          <figcaption>The Night</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Mens shopping</figcaption>
+        </figure>
+        <figure style="--c:#fff5">
+          <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
+          <figcaption>The Night</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Mens shopping</figcaption>
+        </figure>
+        <figure style="--c:#fff5">
+          <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
+          <figcaption>The Night</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
+          <figcaption>Mens shopping</figcaption>
+        </figure>
+        <figure style="--c:#fff5">
+          <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
+          <figcaption>The Night</figcaption>
+        </figure>
+        <!-- Add more figures here as needed
+      </div>
+    </div>  -->
+
+
+    <footer>
+      <div class="footer">
+        <div class="socialcard">
+          <a href="#" class="socialContainer containerOne">
+            <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+    
+          <a href="#" class="socialContainer containerTwo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="socialSvg twitterSvg" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+          </a>
+    
+          <a href="#" class="socialContainer containerThree">
+            <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              />
+            </svg>
+          </a>
+    
+          <a href="#" class="socialContainer containerFour">
+            <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.447.099s-.51.646-.625.782c-.115.13-.23.146-.427.049-.197-.098-.832-.307-1.586-.98-.586-.522-.982-1.165-1.096-1.362-.114-.197-.012-.302.086-.401.088-.088.197-.23.295-.345.099-.115.13-.197.197-.328.066-.13.033-.246-.016-.345-.048-.099-.447-1.078-.611-1.473-.16-.383-.323-.33-.447-.335l-.382-.007a.865.865 0 0 0-.63.296c-.216.23-.822.804-.822 1.961s.842 2.273.959 2.432c.115.146 1.652 2.52 4.007 3.386.56.243.996.388 1.337.497.561.179 1.07.154 1.473.093.449-.067 1.17-.48 1.335-.943.164-.461.164-.857.115-.943-.05-.088-.182-.13-.38-.23z"
+              />
+            </svg>
+          </a>
+        </div>
+        
+
+    
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <!-- <li><a href="#">Our Services</a></li> -->
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <!-- <li><a href="#">Career</a></li> -->
+          </ul>
+        </div>
+    
+        <div class="row">
+          FitFusion Copyright © 2024 FitFusion - All rights reserved ||
+        </div>
+      </div>
+    </footer>
+<script>
+
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Show the button when scrolling down
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+// Scroll to the top when the button is clicked
+backToTopBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+// Open and close the cart modal using the icon
+const cartIcon = document.querySelector('#cart-icon');
+const cartCount = document.querySelector('.cart-count');
+const cartModalOverlay = document.querySelector('.cart-modal-overlay');
+const closeBtn = document.querySelector('#close-btn');
+
+cartIcon.addEventListener('click', () => {
+  cartModalOverlay.style.transform = 
+    cartModalOverlay.style.transform === 'translateX(0)'
+      ? 'translateX(-200%)'
+      : 'translateX(0)';
+});
+
+closeBtn.addEventListener('click', () => {
+  cartModalOverlay.style.transform = 'translateX(-200%)';
+});
+
+// Close the modal when clicking outside of it
+cartModalOverlay.addEventListener('click', (e) => {
+  if (e.target.classList.contains('cart-modal-overlay')) {
+    cartModalOverlay.style.transform = 'translateX(-200%)';
+  }
+});
+
+// Add products to the cart
+const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+const productRowsContainer = document.querySelector('.product-rows');
+
+addToCartButtons.forEach((button) => {
+  button.addEventListener('click', addToCartClicked);
+});
+
+function addToCartClicked(event) {
+  const button = event.target.closest('.add-to-cart-button'); // Ensure correct target
+  const cartItem = button.closest('.product-card-wrapper');
+  const price = cartItem.querySelector('.new-price').innerText;
+  const productTitle = cartItem.querySelector('.product-details-title').innerText;
+  const imageSrc = cartItem.querySelector('.product-image').classList[1]; // Image class name
+
+  addItemToCart(productTitle, price, imageSrc);
+  updateCartPrice();
+}
+
+function addItemToCart(title, price, imageSrc) {
+  const cartItems = document.querySelectorAll('.product-row .cart-title');
+  for (let i = 0; i < cartItems.length; i++) {
+    if (cartItems[i].innerText === title) {
+      alert('This item has already been added to the cart');
+      return;
+    }
+  }
+
+  const productRow = document.createElement('div');
+  productRow.classList.add('product-row');
+  const cartRowContent = `
+    <div class="product-row">
+      <div class="cart-item">
+        <div class="cart-image ${imageSrc}"></div>
+        <span class="cart-title">${title}</span>
+      </div>
+      <span class="cart-price">${price}</span>
+      <input class="product-quantity" type="number" value="1" style="width: 40px; height: 25px; font-size: 18px;">
+      <button class="remove-btn">Remove</button>
+    </div>
+  `;
+
+  productRow.innerHTML = cartRowContent;
+  productRowsContainer.appendChild(productRow);
+
+  productRow.querySelector('.remove-btn').addEventListener('click', removeItem);
+  productRow.querySelector('.product-quantity').addEventListener('change', changeQuantity);
+}
+
+// Remove products from the cart
+function removeItem(event) {
+  const btnClicked = event.target;
+  btnClicked.closest('.product-row').remove();
+  updateCartPrice();
+}
+
+// Update quantity input
+function changeQuantity(event) {
+  const input = event.target;
+  if (isNaN(input.value) || input.value <= 0) {
+    input.value = 1;
+  }
+  updateCartPrice();
+}
+
+// Update total price and cart count
+function updateCartPrice() {
+  const productRows = document.querySelectorAll('.product-row');
+  let total = 0;
+  let itemCount = 0;
+
+  productRows.forEach((row) => {
+    const priceElement = row.querySelector('.cart-price');
+    const quantityElement = row.querySelector('.product-quantity');
+    const price = parseFloat(priceElement.innerText.replace('₹', ''));
+    const quantity = parseInt(quantityElement.value);
+
+    total += price * quantity;
+    itemCount += quantity;
+  });
+
+  document.querySelector('.total-price').innerText = `₹${total}`;
+  cartCount.textContent = itemCount; // Update the cart count
+}
+
+// Purchase items
+const purchaseBtn = document.querySelector('.purchase-btn');
+
+purchaseBtn.addEventListener('click', () => {
+  alert('Thank you for your purchase!');
+  cartModalOverlay.style.transform = 'translateX(-200%)';
+
+  while (productRowsContainer.firstChild) {
+    productRowsContainer.removeChild(productRowsContainer.firstChild);
+  }
+
+  updateCartPrice();
+});
+</script>
+</body>
+
+</html>
